@@ -1,0 +1,85 @@
+{
+  "id": "6ebbf7da-ec0f-4188-bf81-8bddf5f3ace4",
+  "version": "2.0",
+  "name": "Alix_Test_IMDB",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "d2a4df27-4e29-4643-8611-20a83d26193f",
+    "name": "Finding Nemo_IMDB_test",
+    "commands": [{
+      "id": "abb56b66-d591-4d46-b5e7-2ecfb9a74eff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcce1ffc-5afe-4e61-b294-9155fc54fb57",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1616x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4770bcf3-269d-48af-b781-ac22d6f909cf",
+      "comment": "",
+      "command": "click",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fe8f51a-4216-4293-ba56-870c3a68f082",
+      "comment": "",
+      "command": "type",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "finding nemo"
+    }, {
+      "id": "f16b6653-59ef-430c-a517-572f2b3a4d45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ipc-lockup-overlay--hover > .ipc-lockup-overlay__gradient",
+      "targets": [
+        ["css=.ipc-lockup-overlay--hover > .ipc-lockup-overlay__gradient", "css:finder"],
+        ["xpath=//li[@id='react-autowhatever-1--item-1']/a/div/div[2]/div[2]", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22397c17-6e76-4d7b-a131-0cb4bb8bcbfe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-playback",
+      "targets": [
+        ["css=.jw-icon-playback", "css:finder"],
+        ["xpath=//div[@id='imdb-jw-video-1']/div[9]/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "56a1cce1-3bd2-4e86-8732-bd5d9fdd1888",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d2a4df27-4e29-4643-8611-20a83d26193f"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
